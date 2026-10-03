@@ -1,0 +1,15 @@
+@page
+@model EditModel
+<h2>Order Update</h2>
+<div>
+    <form method="post">
+
+        <input type="text" placeholder="Enter CustomerName" class="form-control" asp-for="CustomerName" />
+        <input type="text" placeholder="Enter ProductName" class="form-control" asp-for="ProductName" />
+        <input type="number" placeholder="Enter Quantity" class="form-control" asp-for="Quantity" />
+        <input type="number" step="0.01" placeholder="Enter Price" class="form-control" asp-for="Price" />
+        <input type="datetime-local" placeholder="Enter OrderDate" class="form-control" asp-for="OrderDate" />
+
+        <button type="Submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
